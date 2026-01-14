@@ -56,11 +56,10 @@ public class ByteDetective {
         // TODO: Open FileInputStream using try-with-resources
         System.out.println("Implement readAllBytes()");
 
-        try(DataInputStream input = new DataInputStream
-                (new FileInputStream("mystery.bin"))){
+        try(FileInputStream input = new FileInputStream("mystery.bin")){
 
             // TODO: Create an int variable for the byte value
-            int bite = input.readByte();
+            int bite = input.read();
 
             // TODO: Create a counter for total bytes
             int count = 0;
@@ -101,10 +100,9 @@ public class ByteDetective {
         // TODO: But use String.format("%02X ", byteValue) for display
         System.out.println("Implement displayAsHex()");
 
-        try(DataInputStream input = new DataInputStream
-                (new FileInputStream("mystery.bin"))){
+        try(FileInputStream input = new FileInputStream("mystery.bin")){
 
-            int bite = input.readByte();
+            int bite = input.read();
 
             int count = 0;
 
@@ -146,10 +144,9 @@ public class ByteDetective {
         // TODO: Cast to char and print: System.out.print((char) byteValue);
         System.out.println("Implement attemptAsAscii()");
 
-        try(DataInputStream input = new DataInputStream
-                (new FileInputStream("mystery.bin"))){
+        try(FileInputStream input = new FileInputStream("mystery.bin")){
 
-            int bite = input.readByte();
+            int bite = input.read();
 
             int count = 0;
 
@@ -198,13 +195,12 @@ public class ByteDetective {
         long sum = 0; // long sum = 0;   (use long to avoid overflow)
 
 
-        try(DataInputStream input = new DataInputStream
-                (new FileInputStream("mystery.bin"))){
+        try(FileInputStream input = new FileInputStream("mystery.bin")){
 
             // TODO: Read file with standard loop
-            int bite = input.readByte();
+            int bite = input.read();
 
-            while(input.read() != -1){
+            while((bite = input.read()) != -1){
                 //       Inside loop:
                 if (bite < min){ //Update min if byteValue < min
                     min = bite;
