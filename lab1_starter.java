@@ -59,7 +59,7 @@ public class ByteDetective {
         try(FileInputStream input = new FileInputStream("mystery.bin")){
 
             // TODO: Create an int variable for the byte value
-            int bite = input.read();
+            int bite;
 
             // TODO: Create a counter for total bytes
             int count = 0;
@@ -102,7 +102,7 @@ public class ByteDetective {
 
         try(FileInputStream input = new FileInputStream("mystery.bin")){
 
-            int bite = input.read();
+            int bite;
 
             int count = 0;
 
@@ -146,7 +146,7 @@ public class ByteDetective {
 
         try(FileInputStream input = new FileInputStream("mystery.bin")){
 
-            int bite = input.read();
+            int bite;
 
             int count = 0;
 
