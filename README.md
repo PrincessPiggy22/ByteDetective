@@ -9,4 +9,5 @@ So that the return type lets it return -1 when it is done
 ### Why is try-with-resources better than try-catch-finally?
 Automatic closing
 #### What could go wrong with manual closing?
+Data Loss
 ### Is this how you'd read text files in real programs?
