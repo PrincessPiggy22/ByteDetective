@@ -1,5 +1,6 @@
 # Discussion Questions
 ### Why does read() return int instead of byte?
+So that the return type lets it return -1 when it is done
 #### What would break if it returned byte?
 ### When did Task 4 work vs. when did it fail?
 #### What kinds of files can be interpreted as ASCII?
