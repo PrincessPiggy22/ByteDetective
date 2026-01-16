@@ -198,7 +198,7 @@ public class ByteDetective {
         try(FileInputStream input = new FileInputStream("mystery.bin")){
 
             // TODO: Read file with standard loop
-            int bite = input.read();
+            int bite;
 
             while((bite = input.read()) != -1){
                 //       Inside loop:
